@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>First Page</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="canvasbox">
+    <canvas #canvasElement class="canvasI" [hidden]="images.length === 0"></canvas>
+  </div>
+  
+  <ion-button expand="full" (click)="captureImage()">Add Image</ion-button>
+  <ion-button expand="full" (click)="goToSecondPage()">{{load?"Go to Second Page":"loading..."}}</ion-button>
+
+</ion-content>

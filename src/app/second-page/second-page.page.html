@@ -1,0 +1,12 @@
+<ion-header>
+  <ion-toolbar>
+    <i class="fa fa-arrow-left" (click)="back()" aria-hidden="true"></i> <ion-title>Second Page</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-text color="primary">
+  <ion-button expand="full" (click)="nextPage()">{{load?"Go to Third Page":"loading..."}}</ion-button>
+    
+  </ion-text>
+</ion-content>

@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar>
+    <i class="fa fa-arrow-left" aria-hidden="true"  (click)="back()"></i><ion-title>Third Page</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="6" *ngFor="let image of images">
+        <img [src]="image" alt="Captured Image" />
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+<ion-footer>
+  <ion-button expand="full" (click)="goToFirstPage()">Go To First Page</ion-button>
+</ion-footer>
